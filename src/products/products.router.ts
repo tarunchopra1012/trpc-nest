@@ -53,7 +53,6 @@ export class ProductsRouter {
     output: productSchema,
   })
   createProduct(@Input() productData: Product, @Ctx() context: IAppContext) {
-    console.log('context', context);
     return this.productsService.createProduct(productData);
   }
 
